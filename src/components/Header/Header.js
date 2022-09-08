@@ -5,6 +5,7 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 import { auth } from "../../firebase";
+import ConnectButton from "C:\\Users\\Saransh\\FinalPro\\Amazon-Clone\\src\\components\\connectMeta.js";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -27,6 +28,9 @@ function Header() {
       <div className="header-search">
         <input className="header-searchInput" type="text" />
         <SearchIcon className="header-searchIcon" />
+      </div>
+      <div>
+            <ConnectButton />
       </div>
 
       <div className="header-nav">
